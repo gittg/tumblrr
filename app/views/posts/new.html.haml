@@ -1,11 +1,12 @@
-%h1 Make something
+#page_wrapper
+  %h1 Make something
 
-= form_for :post, url: posts_path do |f|
-  %p
-    = f.label :title
-    = f.text_field :title 
-  %p
-    = f.label :body
-    = f.text_area :body
-  %p
-    = f.submit 
+  = form_for :post, url: posts_path do |f|
+    %p
+      = f.label :title
+      = f.text_field :title 
+    %p
+      = f.label :body
+      = f.text_area :body
+    %p
+      = f.submit 
