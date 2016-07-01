@@ -1,0 +1,10 @@
+%h1.title
+  = @post.title
+
+%p.date
+  Submitted
+  = time_ago_in_words(@post.created_at)
+  ago
+
+%p.body
+  = @post.body
