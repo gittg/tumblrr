@@ -1,1 +1,6 @@
-%h1 This is placeholder
+- @posts.each do |post|
+  #post_wrapper
+    %h2.title= link_to post.title, post
+
+    %p.date= time_ago_in_words(post.created_at)
+
