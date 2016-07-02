@@ -1,5 +1,6 @@
 #post_content
   - @posts.each do |post|
     %h2.title= link_to post.title, post
+    %p.body= truncate(post.body, length:100)
     %p.date= time_ago_in_words(post.created_at)
 
