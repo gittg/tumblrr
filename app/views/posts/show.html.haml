@@ -9,3 +9,9 @@
 
   %p.body
     = @post.body
+
+  .comments
+    %h2= "#{@post.comments.count} Comments"
+    = render @post.comments
+    %h3 Join Discussion
+    = render "comments/form"
